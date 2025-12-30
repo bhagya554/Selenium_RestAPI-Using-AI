@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExercise_UI_Suite"
+       parallel="tests"
+       thread-count="4"
+       verbose="2">
+
+    <!-- Common parameter passed to BaseTest -->
+    <parameter name="navigateToBaseUrl" value="true"/>
+
+    <!-- ======================== -->
+    <!--  1 Test Class = 1 Test (Parallel) -->
+    <!-- ======================== -->
+
+    <test name="Home Page Tests">
+        <classes>
+            <class name="com.seleniumframeworkusingai.tests.ui.HomePageTests"/>
+        </classes>
+    </test>
+
+    <test name="Login Page Tests">
+        <classes>
+            <class name="com.seleniumframeworkusingai.tests.ui.LoginPageTests"/>
+        </classes>
+    </test>
+
+    <test name="Products Page Tests">
+        <classes>
+            <class name="com.seleniumframeworkusingai.tests.ui.ProductsPageTests"/>
+        </classes>
+    </test>
+
+    <test name="Contact Us Page Tests">
+        <classes>
+            <class name="com.seleniumframeworkusingai.tests.ui.ContactUsPageTests"/>
+        </classes>
+    </test>
+
+</suite>
