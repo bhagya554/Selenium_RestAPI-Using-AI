@@ -7,5 +7,6 @@ public class Sample {
         System.out.println("Branch 1");
         System.out.println("Branch 1");
         System.out.println("Branch 1");
+        System.out.println("Hello");
     }
 }
